@@ -1,0 +1,4 @@
+dist-newstyle/*
+.vscode/*
+app/Main
+test/Main
