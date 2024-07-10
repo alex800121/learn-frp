@@ -74,7 +74,7 @@ library
     import:           options, dependencies
 
     -- Modules exported by the library.
-    exposed-modules:  YampaMe, DunaiMe, Bluefin.Algae.Atomic
+    exposed-modules:  YampaMe, DunaiMe, Bluefin.Algae.Atomic, Bluefin.Algae.MSF
 
     -- Modules included in this library but not exported.
     other-modules: NatOrder
@@ -92,7 +92,7 @@ library
 
 executable term
     import: dependencies, options
-    other-modules: YampaMe, DunaiMe, Bluefin.Algae.Atomic
+    other-modules: YampaMe, DunaiMe, Bluefin.Algae.Atomic, Bluefin.Algae.MSF
     default-language: GHC2021
     main-is: Main.hs
     hs-source-dirs: app, src

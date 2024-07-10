@@ -151,17 +151,3 @@ main = runEff $ \io -> evalState undefined $ \t -> evalState undefined $ \s -> d
   appLoop vty io s t
   effIO io $ shutdown vty
   get s >>= effIO io . print
-
-type Ball = Int
-
-ballToRight lPos = count >>> arrM (\n -> (+ n) <$> ask lPos)
-
-ballToLeft rPos = count >>> arrM (\n -> subtract n <$> ask rPos)
-
-hitRight rPos = arrM (\n -> (n >=) <$> ask rPos)
-
-hitLeft lPos = arrM (\n -> (n <=) <$> ask lPos)
-
-testMSF lPos rPos = ballToRight lPos >>> (arr id &&& hitRight rPos)
-
-test lPos rPos = morphS (runReader 0 lPos . runReader 3 rPos) (ballToRight lPos >>> hitRight rPos)

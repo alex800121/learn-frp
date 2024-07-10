@@ -15,7 +15,7 @@ Atomic	/home/alex800121/haskell/term/src/Bluefin/Algae/STM.hs	1;"	m
 Atomically	/home/alex800121/haskell/term/src/Bluefin/Algae/Atomic.hs	9;"	C
 Atomically	/home/alex800121/haskell/term/src/Bluefin/Algae/STM.hs	9;"	C
 B	/home/alex800121/haskell/term/src/DunaiMe.hs	25;"	C
-Ball	/home/alex800121/haskell/term/src/DunaiMe.hs	155;"	t
+Ball	/home/alex800121/haskell/term/src/Bluefin/Algae/MSF.hs	12;"	t
 ChangePos	/home/alex800121/haskell/term/src/DunaiMe.hs	20;"	C
 ChangePos	/home/alex800121/haskell/term/src/MoveMe.hs	50;"	C
 ChangePos	/home/alex800121/haskell/term/src/MyLib.hs	50;"	C
@@ -24,6 +24,8 @@ DunaiMe	/home/alex800121/haskell/term/src/DunaiMe.hs	4;"	m
 G	/home/alex800121/haskell/term/src/DunaiMe.hs	25;"	C
 LTS	/home/alex800121/haskell/term/src/NatOrder.hs	19;"	C
 LTZ	/home/alex800121/haskell/term/src/NatOrder.hs	18;"	C
+MSF	/home/alex800121/haskell/term/src/Bluefin/Algae/MSF.hs	1;"	m
+MSF	/home/alex800121/haskell/term/src/Bluefin/MSF.hs	1;"	m
 Main	/home/alex800121/haskell/term/app/Main.hs	1;"	m
 Main	/home/alex800121/haskell/term/test/Main.hs	1;"	m
 Move	/home/alex800121/haskell/term/src/DunaiMe.hs	23;"	C
@@ -73,8 +75,8 @@ background	/home/alex800121/haskell/term/src/MoveMe.hs	42;"	f
 background	/home/alex800121/haskell/term/src/MyLib.hs	42;"	f
 background	/home/alex800121/haskell/term/src/YampaMe.hs	44;"	f
 backgroundImg	/home/alex800121/haskell/term/src/DunaiMe.hs	29;"	f
-ballToLeft	/home/alex800121/haskell/term/src/DunaiMe.hs	159;"	f
-ballToRight	/home/alex800121/haskell/term/src/DunaiMe.hs	157;"	f
+ballToLeft	/home/alex800121/haskell/term/src/Bluefin/Algae/MSF.hs	17;"	f
+ballToRight	/home/alex800121/haskell/term/src/Bluefin/Algae/MSF.hs	14;"	f
 bindir	/home/alex800121/haskell/term/dist-newstyle/build/x86_64-linux/ghc-9.6.5/term-0.1.0.0/build/autogen/Paths_term.hs	48;"	f
 bindir	/home/alex800121/haskell/term/dist-newstyle/build/x86_64-linux/ghc-9.6.5/term-0.1.0.0/t/term-test/build/term-test/autogen/Paths_term.hs	48;"	f
 bindir	/home/alex800121/haskell/term/dist-newstyle/build/x86_64-linux/ghc-9.6.5/term-0.1.0.0/x/term/build/term/autogen/Paths_term.hs	48;"	f
@@ -142,8 +144,8 @@ getSysconfDir	/home/alex800121/haskell/term/dist-newstyle/build/x86_64-linux/ghc
 getSysconfDir	/home/alex800121/haskell/term/dist-newstyle/build/x86_64-linux/ghc-9.6.5/term-0.1.0.0/t/term-test/build/term-test/autogen/Paths_term.hs	43;"	f
 getSysconfDir	/home/alex800121/haskell/term/dist-newstyle/build/x86_64-linux/ghc-9.6.5/term-0.1.0.0/x/term/build/term/autogen/Paths_term.hs	43;"	f
 getSysconfDir	/home/alex800121/haskell/term/dist-newstyle/build/x86_64-linux/ghc-9.6.5/term-0.1.0.0/x/term/opt/build/term/autogen/Paths_term.hs	43;"	f
-hitLeft	/home/alex800121/haskell/term/src/DunaiMe.hs	163;"	f
-hitRight	/home/alex800121/haskell/term/src/DunaiMe.hs	161;"	f
+hitLeft	/home/alex800121/haskell/term/src/Bluefin/Algae/MSF.hs	21;"	f
+hitRight	/home/alex800121/haskell/term/src/Bluefin/Algae/MSF.hs	19;"	f
 homepage	/home/alex800121/haskell/term/dist-newstyle/build/x86_64-linux/ghc-9.6.5/term-0.1.0.0/build/autogen/PackageInfo_term.hs	24;"	f
 homepage	/home/alex800121/haskell/term/dist-newstyle/build/x86_64-linux/ghc-9.6.5/term-0.1.0.0/t/term-test/build/term-test/autogen/PackageInfo_term.hs	24;"	f
 homepage	/home/alex800121/haskell/term/dist-newstyle/build/x86_64-linux/ghc-9.6.5/term-0.1.0.0/x/term/build/term/autogen/PackageInfo_term.hs	24;"	f
@@ -207,6 +209,7 @@ primes	/home/alex800121/haskell/term/src/NatOrder.hs	44;"	f
 primes'	/home/alex800121/haskell/term/src/NatOrder.hs	46;"	f
 primes''	/home/alex800121/haskell/term/src/NatOrder.hs	48;"	f
 project	/home/alex800121/haskell/term/src/NatOrder.hs	29;"	f
+runF	/home/alex800121/haskell/term/src/Bluefin/Algae/MSF.hs	30;"	f
 sense	/home/alex800121/haskell/term/src/DunaiMe.hs	90;"	f
 sense	/home/alex800121/haskell/term/src/MoveMe.hs	75;"	f
 sense	/home/alex800121/haskell/term/src/MyLib.hs	75;"	f
@@ -220,8 +223,8 @@ sysconfdir	/home/alex800121/haskell/term/dist-newstyle/build/x86_64-linux/ghc-9.
 sysconfdir	/home/alex800121/haskell/term/dist-newstyle/build/x86_64-linux/ghc-9.6.5/term-0.1.0.0/t/term-test/build/term-test/autogen/Paths_term.hs	48;"	f
 sysconfdir	/home/alex800121/haskell/term/dist-newstyle/build/x86_64-linux/ghc-9.6.5/term-0.1.0.0/x/term/build/term/autogen/Paths_term.hs	48;"	f
 sysconfdir	/home/alex800121/haskell/term/dist-newstyle/build/x86_64-linux/ghc-9.6.5/term-0.1.0.0/x/term/opt/build/term/autogen/Paths_term.hs	48;"	f
-test	/home/alex800121/haskell/term/src/DunaiMe.hs	167;"	f
-testMSF	/home/alex800121/haskell/term/src/DunaiMe.hs	165;"	f
+test	/home/alex800121/haskell/term/src/Bluefin/Algae/MSF.hs	28;"	f
+testMSF	/home/alex800121/haskell/term/src/Bluefin/Algae/MSF.hs	23;"	f
 timer	/home/alex800121/haskell/term/src/MoveMe.hs	46;"	f
 timer	/home/alex800121/haskell/term/src/MyLib.hs	46;"	f
 timer	/home/alex800121/haskell/term/src/YampaMe.hs	48;"	f
