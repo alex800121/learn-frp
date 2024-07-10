@@ -50,24 +50,39 @@ extra-doc-files:    CHANGELOG.md
 -- Extra source files to be distributed with the package, such as examples, or a tutorial module.
 -- extra-source-files:
 
-common warnings
-    ghc-options: -Wall
+common options
+    ghc-options: -Wall -threaded
+
+common dependencies
+    build-depends:    
+        base,
+        vty, 
+        vty-crossplatform, 
+        Yampa, 
+        mtl, 
+        transformers, 
+        time, 
+        dunai ^>= 0.13,
+        bearriver ^>= 0.14.9,
+        bluefin-algae, 
+        bluefin,
+        stm
+
 
 library
     -- Import common warning flags.
-    import:           warnings
+    import:           options, dependencies
 
     -- Modules exported by the library.
-    exposed-modules:  MyLib
+    exposed-modules:  YampaMe, DunaiMe, Bluefin.Algae.Atomic
 
     -- Modules included in this library but not exported.
-    -- other-modules:
+    other-modules: NatOrder
 
     -- LANGUAGE extensions used by modules in this package.
     -- other-extensions:
 
     -- Other library packages from which modules are imported.
-    build-depends:    base ^>=4.18.2.1, vty, vty-crossplatform, vector-space
 
     -- Directories containing source files.
     hs-source-dirs:   src
@@ -75,9 +90,16 @@ library
     -- Base language which the package is written in.
     default-language: GHC2021
 
+executable term
+    import: dependencies, options
+    other-modules: YampaMe, DunaiMe, Bluefin.Algae.Atomic
+    default-language: GHC2021
+    main-is: Main.hs
+    hs-source-dirs: app, src
+    build-depends: base
 test-suite term-test
     -- Import common warning flags.
-    import:           warnings
+    import:           options
 
     -- Base language which the package is written in.
     default-language: GHC2021
@@ -98,6 +120,3 @@ test-suite term-test
     main-is:          Main.hs
 
     -- Test dependencies.
-    build-depends:
-        base ^>=4.18.2.1,
-        term
